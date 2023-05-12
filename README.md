@@ -8,9 +8,9 @@ I'm logging everything to files, it's a global logger, such that where ever an e
 
 In the BookStore.API, there is a folder called "Logs", there you find all the logs sorted by date.
 
-I utilize Dependency Injection, neatly abstracted things, modularize the application.
+I utilize Dependency Injection, neatly abstracted functionalities to ensure horizontal scalability, modular, maximum reusability and modularity.
 
-I Kept everything, module, simple and understandable. I utilize Microsoft Identity for authentication and jwt token for authorization.
+I Kept everything modular, simple and understandable. I utilize Microsoft Identity for authentication and jwt token for authorization.
 
 # Follow me steadily let me explain.
 

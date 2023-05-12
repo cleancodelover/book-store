@@ -1937,3 +1937,28 @@ ORDER BY [MigrationId];
 [2023-05-12 15:34:18+00:00] [Information] Application started. Press Ctrl+C to shut down. 
 [2023-05-12 15:34:18+00:00] [Information] Hosting environment: Development 
 [2023-05-12 15:34:18+00:00] [Information] Content root path: C:\Project\2022\BookStore\BookStore.API\ 
+[2023-05-12 18:19:54+00:00] [Information] Now listening on: https://localhost:7172 
+[2023-05-12 18:19:54+00:00] [Information] Now listening on: http://localhost:5172 
+[2023-05-12 18:19:54+00:00] [Information] Application started. Press Ctrl+C to shut down. 
+[2023-05-12 18:19:54+00:00] [Information] Hosting environment: Development 
+[2023-05-12 18:19:54+00:00] [Information] Content root path: C:\Project\2022\BookStore\BookStore.API\ 
+[2023-05-12 18:25:08+00:00] [Warning] 'AddEntityFramework*' was called on the service provider, but 'UseInternalServiceProvider' wasn't called in the DbContext options configuration. Consider removing the 'AddEntityFramework*' call, as in most cases it's not needed and may cause conflicts with other products and services registered in the same service provider. 
+[2023-05-12 18:25:24+00:00] [Information] Entity Framework Core 6.0.16 initialized 'BOOK_STOREContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.16' with options: None 
+[2023-05-12 18:25:25+00:00] [Information] Executed DbCommand (111ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[Address], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[IsDeleted], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[Othernames], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0 
+[2023-05-12 18:25:25+00:00] [Information] Executed DbCommand (29ms) [Parameters=[@__user_Id_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[UserId]
+FROM [AspNetUserClaims] AS [a]
+WHERE [a].[UserId] = @__user_Id_0 
+[2023-05-12 18:25:25+00:00] [Information] Executed DbCommand (3ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0 
+[2023-05-12 18:26:03+00:00] [Information] Entity Framework Core 6.0.16 initialized 'BOOK_STOREContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.16' with options: None 
+[2023-05-12 18:26:03+00:00] [Information] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[Address], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[IsDeleted], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[Othernames], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @__p_0 

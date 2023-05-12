@@ -1,0 +1,17 @@
+C:\Project\2022\BookStore\BookStore.BAL\bin\Debug\net6.0\BookStore.BLL.deps.json
+C:\Project\2022\BookStore\BookStore.BAL\bin\Debug\net6.0\BookStore.BLL.runtimeconfig.json
+C:\Project\2022\BookStore\BookStore.BAL\bin\Debug\net6.0\BookStore.BLL.dll
+C:\Project\2022\BookStore\BookStore.BAL\bin\Debug\net6.0\BookStore.BLL.pdb
+C:\Project\2022\BookStore\BookStore.BAL\bin\Debug\net6.0\BookStore.DAL.dll
+C:\Project\2022\BookStore\BookStore.BAL\bin\Debug\net6.0\BookStore.DAL.pdb
+C:\Project\2022\BookStore\BookStore.BAL\obj\Debug\net6.0\BookStore.BLL.csproj.AssemblyReference.cache
+C:\Project\2022\BookStore\BookStore.BAL\obj\Debug\net6.0\BookStore.BLL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Project\2022\BookStore\BookStore.BAL\obj\Debug\net6.0\BookStore.BLL.AssemblyInfoInputs.cache
+C:\Project\2022\BookStore\BookStore.BAL\obj\Debug\net6.0\BookStore.BLL.AssemblyInfo.cs
+C:\Project\2022\BookStore\BookStore.BAL\obj\Debug\net6.0\BookStore.BLL.csproj.CoreCompileInputs.cache
+C:\Project\2022\BookStore\BookStore.BAL\obj\Debug\net6.0\BookStore.BLL.csproj.CopyComplete
+C:\Project\2022\BookStore\BookStore.BAL\obj\Debug\net6.0\BookStore.BLL.dll
+C:\Project\2022\BookStore\BookStore.BAL\obj\Debug\net6.0\refint\BookStore.BLL.dll
+C:\Project\2022\BookStore\BookStore.BAL\obj\Debug\net6.0\BookStore.BLL.pdb
+C:\Project\2022\BookStore\BookStore.BAL\obj\Debug\net6.0\BookStore.BLL.genruntimeconfig.cache
+C:\Project\2022\BookStore\BookStore.BAL\obj\Debug\net6.0\ref\BookStore.BLL.dll

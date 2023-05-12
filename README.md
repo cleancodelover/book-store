@@ -30,7 +30,7 @@ I Kept everything, module, simple and understandable. I utilize Microsoft Identi
   - Look down on the project file tree and locate "appsettings.json"
   - Expand the appsettings flyout to expose "appsettings.Development.json"
   - Click on "appsettings.Development.json" to open it in your VS Editor window.
-  - Locate "BookStoreConnection", in the value section, replace everything after "Server=" and replace everything after the "=" up to before ";" with the server name you copied from MSSQL Management Studio.
+  - Locate "BookStoreConnection", in the value section, replace everything after "Server=" up to before ";" with the server name you copied from MSSQL Management Studio.
   - Save and close the file.
 
 ## Step 4:<br>

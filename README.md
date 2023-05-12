@@ -1,7 +1,7 @@
 # Book Store API Documentation
 
 # Summary <br>
-The project uses a layered architecture, divided into 3 tiers, the API layer (BookStore.API) which is where the endpoints are exposed and every other thing that has to do with clients, the Business Logic layer (BookStore.BLL), this is where the business logic, complex compuations are handled and lastly the Data Access Layer (BookStore.DAL) which is where the connection to the database is established, housing the models and everything that has to do with the database. Also, to keep things clean and tidy, I have both unit and integration testing in seperate assemplies.
+The project uses a layered architecture, divided into 3 tiers, the API layer (BookStore.API) which is where the endpoints are exposed and every other thing that has to do with clients, the Business Logic layer (BookStore.BLL), this is where the business logic, complex compuations are handled and lastly the Data Access Layer (BookStore.DAL) which is where the connection to the database is established, housing the models and everything that has to do with the database. Also, to keep things clean and tidy, I keep both unit and integration tests in seperate assemblies.<br>
 Note: I used MSSQL so you must have it installed with MSSQL Management Studio. The API strictly follows the RESt API rules, using the appropriate verbs to represent exactly what they do.
 
 I'm logging everything to files, it's a global logger, such that where ever an error occurs, it tracks it and logs it to a file. It's not good practice to log to db since they can easily become really large.

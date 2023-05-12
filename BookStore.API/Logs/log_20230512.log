@@ -1917,3 +1917,23 @@ Error Number:547,State:0,Class:16
    at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
    at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
    at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+[2023-05-12 15:21:05+00:00] [Warning] 'AddEntityFramework*' was called on the service provider, but 'UseInternalServiceProvider' wasn't called in the DbContext options configuration. Consider removing the 'AddEntityFramework*' call, as in most cases it's not needed and may cause conflicts with other products and services registered in the same service provider. 
+[2023-05-12 15:21:06+00:00] [Information] Entity Framework Core 6.0.16 initialized 'BOOK_STOREContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.16' with options: None 
+[2023-05-12 15:21:07+00:00] [Information] Executed DbCommand (20ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT 1 
+[2023-05-12 15:21:07+00:00] [Information] Executed DbCommand (21ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]'); 
+[2023-05-12 15:21:07+00:00] [Information] Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT 1 
+[2023-05-12 15:21:07+00:00] [Information] Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]'); 
+[2023-05-12 15:21:07+00:00] [Information] Executed DbCommand (7ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId]; 
+[2023-05-12 15:21:07+00:00] [Information] No migrations were applied. The database is already up to date. 
+[2023-05-12 15:34:18+00:00] [Information] Now listening on: https://localhost:7172 
+[2023-05-12 15:34:18+00:00] [Information] Now listening on: http://localhost:5172 
+[2023-05-12 15:34:18+00:00] [Information] Application started. Press Ctrl+C to shut down. 
+[2023-05-12 15:34:18+00:00] [Information] Hosting environment: Development 
+[2023-05-12 15:34:18+00:00] [Information] Content root path: C:\Project\2022\BookStore\BookStore.API\ 

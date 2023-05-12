@@ -11,6 +11,7 @@ using BookStore.API.ViewModels.Put;
 using Microsoft.AspNetCore.Mvc.Routing;
 using BookStore.DAL.Helpers;
 using Microsoft.AspNetCore.Identity;
+using System.Security.Claims;
 
 namespace BookStore.API.Controllers
 {
@@ -56,6 +57,24 @@ namespace BookStore.API.Controllers
                 return NotFound(new ApiResponse<AspNetUserVM>(false, new List<string>() { "User not found" }, null));
 
             var result = _userBl.GetUserByUserIdAsync(id).Result;
+
+            if (result.Status == (int)Statuses.Failed)
+                return BadRequest(new ApiResponse<AspNetUserVM>(false, new List<string>() { result.Message ?? "User not found" }, null));
+
+            return Ok(new ApiResponse<AspNetUserVM>(true, new List<string>() { "Success." }, _mapper.Map<AspNetUserVM>(result.Data)));
+        }
+
+        [HttpGet]
+        [Route("authorized")]
+        [Authorize]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
+        public ActionResult GetAuthorizedUser()
+        {
+
+            var authUser_id = HttpContext.User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+            var result = _userBl.GetUserByUserIdAsync(authUser_id).Result;
 
             if (result.Status == (int)Statuses.Failed)
                 return BadRequest(new ApiResponse<AspNetUserVM>(false, new List<string>() { result.Message ?? "User not found" }, null));

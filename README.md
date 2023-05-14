@@ -55,7 +55,7 @@ I Kept everything modular, simple and understandable. I utilize Microsoft Identi
 
 # Step 7 - To Sign Up
   - Thankfully, swagger usually sort his APIs so you will have to scroll down to "Users Section",
-  - Expand the "Post" endpoint /users, the model is there with all the required field to signup.
+  - Expand the endpoint "/users" with the verb "Post", the model is there with all the required field to signup.
   - The password must contain letters and numbers with special characters, upper and lower case. I can help you with one "Pa$$w00rd".
   - Fill the fields and click on "Execute", right in your browser, it will send the request to the API and return success message.
 
@@ -65,7 +65,7 @@ I Kept everything modular, simple and understandable. I utilize Microsoft Identi
   - You'll be logged in and a toke will be generated for you in the response you'll get from the server.
   - Copy the token and Look a little above the login endpoint, top to the right and find "Authorize" with a padlock on it,
   - Click it and paste the token you copied in teh popup and click "Authorize" the "close".
-  - To see your details after after sign up because you'll need your userId, COPY IT. It's just "Ctrl C" for windows users and "Command C" for mac users.
+  - To see your details after after sign up because you'll need your userId, call the endpoimt "/users/authorized" and you'll get back the authorized user details COPY the userId. It's just "Ctrl C" for windows users and "Command C" for mac users.
 
 # Step 9 - To Create a Book
   - Scroll to the "Books Section" and locate the enpoint "/books" with the verb "Post", expand it and fill in the parameters including your user name where user name is required and click on "Execute".
@@ -90,7 +90,7 @@ I Kept everything modular, simple and understandable. I utilize Microsoft Identi
   - You are done making a purchase.
 
 # Step 12 - To View your transactions
-  - On thesame transactions, use the "/transactions" endpoint with the "Get" verb, expand it and enter your user name and view all  your transactions.
+  - On thesame transactions, use the "/transactions" endpoint with the "Get" verb, expand it and enter your user id and view all  your transactions.
 
 # Step 13 - Review Books
   - Go down to "Reviews" and expand the endpoint "books/reviews" with the verb "Post", enter your book ID, your user ID, a description and a waited rating, from 0 to 5.

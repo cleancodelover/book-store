@@ -14,7 +14,7 @@ I Kept everything modular, simple and understandable. I utilize Microsoft Identi
 
 # Follow me steadily let me explain.
 
-![guest-template](https://github.com/cleancodelover/book-store/assets/32241315/00e7909b-6917-44cd-a66a-901ddcf67fac)
+![guest-template (1)](https://github.com/cleancodelover/book-store/assets/32241315/a02f0d97-795a-45f1-812d-63f5d44577c7)
 
 ## Step 1:<br>
  - Clone the project to your local machine
